@@ -39,7 +39,7 @@ def register():
                 return register()
         else:
             f.write("\n" + new_username)
-            with open("Password.txt", "r+") as p:
+            with open("Password.txt", "a") as p:
                 p.write("\n" + new_password)
             p.close()
     f.close()
